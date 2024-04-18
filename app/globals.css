@@ -38,4 +38,8 @@ body {
   .flex-center {
     @apply flex justify-center items-center;
   }
+
+  .wrapper {
+    @apply max-w-7xl p-5 md:px-10 mx-auto w-full;
+  }
 }
