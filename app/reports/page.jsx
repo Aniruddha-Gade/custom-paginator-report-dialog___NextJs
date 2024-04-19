@@ -28,6 +28,7 @@ const page = () => {
           showDialog={showDialog}
           setShowDialog={setShowDialog}
           className={''}
+          dialogTitle={'Reently Generated Reports'}
         >
           This is content of dialog
 
