@@ -26,6 +26,7 @@ const page = () => {
 
         <DialogContent
           showDialog={showDialog}
+          setShowDialog={setShowDialog}
           className={''}
         >
           This is content of dialog
