@@ -3,6 +3,7 @@
 import { Dialog, DialogContent, DialogTitle, DialogTrigger } from '@/components/Dialog'
 import { reportsData } from '@/constants/reports'
 import React, { useState } from 'react'
+import Image from 'next/image'
 
 const page = () => {
 
@@ -51,7 +52,13 @@ const page = () => {
                   </td>
                   <td>{report.reportName}</td>
                   <td>
-                    <a href="#">Download</a>
+                    <a href="#">
+                      <Image
+                        src='/assets/icons/download-icon.png'
+                        width={30}
+                        height={30}
+                      />
+                    </a>
                   </td>
                 </tr>
               ))}
