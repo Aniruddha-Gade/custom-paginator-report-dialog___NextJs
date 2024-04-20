@@ -28,16 +28,8 @@ export const DialogContent = ({ children, className, showDialog, setShowDialog, 
 
     return (
         <div className={`fixed inset-7 rounded-2xl text-black bg-white flex flex-col z-50
-                        p-6 shadow-lg duration-200 ${className}`}
+                        py-6 shadow-lg duration-200 ${className}`}
         >
-
-            {/* title of the dialog */}
-            <div className='flex justify-center font-bold text-xl'>
-                <p>
-                    {dialogTitle}
-                </p>
-            </div>
-
             <div className='absolute top-4 right-4 flex w-full'>
                 <div className='absolut right-4 top-4 flex justify-end gap-5 w-full select-non'>
                     {/* filter icon */}
@@ -69,3 +61,12 @@ export const DialogContent = ({ children, className, showDialog, setShowDialog, 
     )
 };
 
+export const DialogTitle = ({ children }) => {
+    return (
+        <div className='flex justify-center font-bold text-base md:text-xl'>
+            <p>
+                {children}
+            </p>
+        </div>
+    )
+}

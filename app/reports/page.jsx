@@ -1,6 +1,7 @@
 'use client'
 
-import { Dialog, DialogContent, DialogTrigger } from '@/components/Dialog'
+import { Dialog, DialogContent, DialogTitle, DialogTrigger } from '@/components/Dialog'
+import { reportsData } from '@/constants/reports'
 import React, { useState } from 'react'
 
 const page = () => {
@@ -28,9 +29,35 @@ const page = () => {
           showDialog={showDialog}
           setShowDialog={setShowDialog}
           className={''}
-          dialogTitle={'Recently Generated Reports'}
+        // dialogTitle={'Recently Generated Reports'}
         >
-          This is content of dialog
+          <DialogTitle>
+            Recently Generated Reports
+          </DialogTitle>
+
+          <table className='text-sm font-medium'>
+            <thead className='bg-slate-200 py-14 h-10'>
+              <tr>
+                <th>Date</th>
+                <th>Report Name</th>
+                <th>Download</th>
+              </tr>
+            </thead>
+            <tbody>
+              {reportsData.map((report) => (
+                <tr key={report.reportName}>
+                  <td className='flex flex-col'>
+                    <p className='text'>{report.date}</p>
+                    <p className='text'>{report.time}</p>
+                  </td>
+                  <td>{report.reportName}</td>
+                  <td>
+                    <a href="#">Download</a>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
 
         </DialogContent>
 
