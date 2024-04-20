@@ -22,13 +22,13 @@ export const DialogTrigger = ({ children, className }) => {
 };
 
 
-export const DialogContent = ({ children, className, showDialog, setShowDialog, dialogTitle }) => {
+export const DialogContent = ({ children, className, showDialog, setShowDialog }) => {
     // console.log('showDialog = ', showDialog)
     if (!showDialog) return null;
 
     return (
         <div className={`fixed inset-7 rounded-2xl text-black bg-white flex flex-col z-50
-                        py-6 shadow-lg duration-200 ${className}`}
+                        py-6 shadow-lg duration-200 overflow-auto ${className}`}
         >
             <div className='absolute top-4 right-4 flex w-full'>
                 <div className='absolut right-4 top-4 flex justify-end gap-5 w-full select-non'>
