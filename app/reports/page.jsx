@@ -40,7 +40,7 @@ const page = () => {
               <tr className='text-start text-gray-600'>
                 <th className='text-start pl-10'>Date</th>
                 <th className='text-start'>Report Name</th>
-                <th className='text-start'>Download</th>
+                <th className='text-start pr-10'>Download</th>
               </tr>
             </thead>
             <tbody>
