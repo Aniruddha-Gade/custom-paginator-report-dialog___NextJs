@@ -31,7 +31,7 @@ const page = () => {
           setShowDialog={setShowDialog}
           className={''}
         >
-          <DialogTitle>
+          <DialogTitle className={'mt-7 sm:mt-0'}>
             Recently Generated Reports
           </DialogTitle>
 

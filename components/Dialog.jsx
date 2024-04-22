@@ -63,9 +63,9 @@ export const DialogContent = ({ children, className, showDialog, setShowDialog }
     )
 };
 
-export const DialogTitle = ({ children }) => {
+export const DialogTitle = ({ children ,className}) => {
     return (
-        <div className='flex justify-center font-bold text-base md:text-xl'>
+        <div className={`flex justify-center font-bold text-base md:text-xl ${className}`}>
             <p>
                 {children}
             </p>
