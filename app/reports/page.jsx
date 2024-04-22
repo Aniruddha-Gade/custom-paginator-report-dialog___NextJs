@@ -11,7 +11,7 @@ const page = () => {
 
   return (
     <div className='wrapper bg-[#101418] h-screen'>
-      <h1 className='text-4xl font-bold text-green-500 '>
+      <h1 className='text-4xl font-bold text-green-500 mb-10'>
         Check All Reports
       </h1>
 
