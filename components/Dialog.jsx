@@ -39,6 +39,7 @@ export const DialogContent = ({ children, className, showDialog, setShowDialog }
                             alt='cancel-icon'
                             width={35}
                             height={35}
+                            className='w-[25px] h-[25px] sm:w-[35px] sm:h-[35px]'
                         />
                     </button>
                     {/* cancel icon */}
@@ -50,6 +51,7 @@ export const DialogContent = ({ children, className, showDialog, setShowDialog }
                             alt='cancel-icon'
                             width={35}
                             height={35}
+                            className='w-[25px] h-[25px] sm:w-[35px] sm:h-[35px]'
                         />
                     </button>
                 </div>
